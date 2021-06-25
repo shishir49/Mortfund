@@ -1,0 +1,92 @@
+logo & navbar : generals table
+navigation links : navmanus table
+slider : sliders table
+how it works: how_it_works table
+about: abouts table
+team : teams table
+secondary point:secondary_point table .   left bar hole  colum= 0 , right hole colum= 1 + modal a column 0/1 select option thakte hobe
+counter: counter table a kaj kora lagbena 
+contact : contact_view tabole , delete icon remove korte hobe 
+
+social settings : socials table . status 1 submit korte hobe
+subscription: subscribe table
+terms of ters : terms table
+privacy: privacies table
+login : signuplogin_views table
+footer: footers table 
+footers> about column =  footer_link_abouts table theke
+        categories column =  =footer_link_categories table theke
+        explore = footer_link_explore table
+clientmessages table theke data ekti extra page a show korate hobe
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	
+php artisan make:controller AdSocialSettingsController
+php artisan make:controller AdSupportController
+php artisan make:controller FooterAboutController
+php artisan make:controller FooterCategoriesController
+php artisan make:controller FooterExploreController
+php artisan make:controller AdLogoNavController
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@clone new project.
+#/copy the link from github
+#git clone https://github.com/suborna020/Lv_Mortfund.git
+#/.env file a database name set
+#composer install
+# php artisan key:generate
+# php artisan config:cache
+
+# php artisan migrate
+# php artisan serve
+@git project sent:
+git add .   
+git commit -m "initial release "
+git pull
+git push
+
+
+
+@for project clear :
+php artisan cache:clear
+php artisan route:cache
+php artisan config:cache
+php artisan view:clear
+php artisan clear-compiled
+composer dump-autoload
+php artisan optimize
+php artisan route:cache
+php artisan config:cache
+
+
+
+@if someone added a package to your git project .after pull you have to run a command like:
+composer install
+
+
+
+
+
+@recieve settings:
+1souse control->masssge->cnt+enter>pull
+sent settings:
+1souse control->masssge->cnt+enter>push
+
+issues:
+urgent fundraisers table. how and were it works
+like add new urgent fundraisers .which table i will insert
+
+catagory icon issue:
+add catagory te modal er (catagory icon) likhe (upload photo) button keno deya?
+
+@ Data seed
+php artisan db:seed
+php artisan db:seed --class=AdminSeeder
+php artisan migrate:refresh --path=/database/migrations/2021_02_08_184701_create_navmenus_table.php
+
+
+
+
+
+
